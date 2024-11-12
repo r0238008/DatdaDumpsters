@@ -15,6 +15,15 @@
             height: 400px;
         }
 
+        /* Achtergrondafbeelding net boven de footer */
+        .footer-background {
+            background-image: url('Afbeeldingen/gladiolen01.jpg'); /* Pad naar je afbeelding */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 50px 0;
+        }
+
         /* Achtergrondafbeelding voor de footer */
         footer {
             background-image: url('Afbeeldingen/Achtergrond datadumpsters (1).png');
@@ -32,6 +41,11 @@
         /* Verander de kleur van de tekst in de header */
         .header-background h1 {
             color: #333; /* Donkergrijze kleur */
+        }
+
+        /* Verander de tekstkleur van de 'lead' klasse naar een donkerdere kleur */
+        .lead {
+            color: #555; /* Donkergrijs voor de tekst */
         }
     </style>
 </head>
@@ -63,23 +77,15 @@
     <!-- Header met achtergrond -->
     <header class="header-background text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">Hoofddocument</h1>
-            <p class="lead">Hier vind je de gedetailleerde documenten voor het project.</p>
+            <h1 class="display-4">Inleiding</h1>
+            <p class="lead">Hier vind je de inleiding van de analysefase</p>
         </div>
     </header>
 
-    <!-- Bijlagen sectie -->
-    <section class="py-5" id="bijlagen">
-        <div class="container">
-            <h2 class="mb-4">WRM Bijlagen</h2>
-            <p>Hieronder vindt u de bijlagen in PDF-formaat. Klik op een bijlage om deze te openen of te downloaden.</p>
-            <ul class="list-group">
-                <li class="list-group-item"><a href="PDF's/Onderzoek GDPR-WRM.pdf" target="_blank">WRM GDPR</a></li>
-                <li class="list-group-item"><a href="PDF's/Onderzoek Hosting.pdf" target="_blank">WRM Hosting</a></li>
-                <li class="list-group-item"><a href="PDF's/plattegrond WRM_Onderzoek.pdf" target="_blank">WRM plattegrond</a></li>
-                <li class="list-group-item"><a href="PDF's/WRM backend.pdf" target="_blank">WRM backend</a></li>
-                <li class="list-group-item"><a href="PDF's/WRM frontend.pdf" target="_blank">WRM frontend</a></li>
-            </ul>
+    <!-- Achtergrond boven de footer -->
+    <section class="footer-background">
+        <div class="container text-white text-center py-3">
+            <p>Gladiolen</p>
         </div>
     </section>
 
