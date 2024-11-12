@@ -13,12 +13,22 @@
             background-position: center;
             height: 400px;
         }
+
+        /* Verander de blauwe navbar naar lichtgrijs */
+        .navbar {
+            background-color: #d3d3d3; /* Lichtgrijs */
+        }
+
+        /* Verander de tekstkleur in de header naar donkergrijs */
+        .header-background h1 {
+            color: #333; /* Donkergrijs */
+        }
     </style>
 </head>
 <body>
 
     <!-- Navigatiebalk -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Data Dumpsters Analysefase</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,4 +55,15 @@
         <div class="container">
             <h1 class="display-4">Slot</h1>
             <p class="lead">Het einde van de analysefase.</p>
-        </
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3" style="background-color: #d3d3d3;">
+        <p class="mb-0">&copy; 2024 Team Data Dumpsters. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
