@@ -103,7 +103,11 @@
     <header class="header-background text-white text-center py-5">
         <div class="container">
             <h1 class="display-4">Dataproject</h1>
-            <p class="lead">Hier vind je de gedetailleerde documenten voor het project.</p>
+            <p class="lead">Het doel van dit project is het implementeren van een systeem waarmee gebruikers zich
+                als lid van hun vereniging automatisch kunnen inschrijven en aanmelden als
+                medewerker op het festival. Dit systeem zal ontworpen worden met het oog op eenvoud,
+                voor zowel de gebruikers als de beheerders.
+                </p>
         </div>
     </header>
 
@@ -137,14 +141,29 @@
     </div>
 
     <div class="container py-3">
+        <h3 class="text-center">Wireframes bekerproject</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <p>In deze koppeling kan u de wireframes voor het bekerproject vinden.</p>
+                <div class="text-center">
+                    <a href="PDF's/wireframes/Wireframes dataregistratie.pdf" class="btn-pdf" target="_blank">Wireframes dataproject</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-3">
         <h3 class="text-center">GDPR vereisten</h3>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <p>Inleidende tekst.</p>
+                <p>GDPR is een belangrijk onderdeel van onze toepassing. Deze moet volledig in orde zijn met de Belgische + Europese regelgeving. 
+                    Alvorens onze WRM hier toe te passen, zijn er verschillende vragen die beantwoord moeten worden betreffende het onderwerp GDPR. 
+                    Het eerste deel van dit onderzoek zal deze vragen behandelen, het tweede deel zal bestaan uit een WRM voor de implementatie van de GDPR-vereisten in onze registratiemodule.</p>
                 <div class="text-center">
-                    <a href="PDF's/PDS Data.pdf" class="btn-pdf" target="_blank">Download PDS data</a>
+                    <a href="PDF's/Onderzoek GDPR-WRM.pdf" class="btn-pdf" target="_blank">Onderzoek GDPR</a>
                 </div>
-                <p>Afsluitende tekst</p>
+                <p>Tijdens het onderzoek naar de GDPR-vereisten, zijn er verscheidene vragen naar boven gekomen. Met behulp van enig opzoekingswerk en de antwoorden van onze contactpersoon, 
+                    zijn al deze vragen beantwoord en hebben we een goede basis om de privacyverklaring te kunnen opstellen en aan de GDPR-voorwaarden te voldoen.</p>
             </div>
         </div>
     </div>
@@ -153,11 +172,13 @@
         <h3 class="text-center">Database</h3>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <p>Inleidende tekst.</p>
+                <p>We willen in kaart brengen hoe we de data van beide projecten zullen verwerken. De dataregistratie enerzijds en het bekerproject anderzijds. 
+                    Aangezien beide projecten toch iets andere noden hebben qua database, maken we hier een duidelijke splitsing.</p>
                 <div class="text-center">
-                    <a href="PDF's/PDS Data.pdf" class="btn-pdf" target="_blank">Download PDS data</a>
+                    <a href="PDF's/Onderzoek databases.pdf" class="btn-pdf" target="_blank">Onderzoek databases</a>
                 </div>
-                <p>Afsluitende tekst</p>
+                <p>Op het eerste zicht lijkt de keuze tussen MySQL en PostgreSQL dus weinig verschil met zich mee te brengen. Beide databases hebben hun eigen sterktes, maar geen enkele van de twee lijkt daar duidelijk veel beter geschikt te zijn voor de kleine database die wij zullen hebben.
+                    Wat betreft de bekerrecyclage is er echter wel een duidelijke keuze en die maakt gebruik van PostgreSQL. Om zoveel mogelijk de uniformiteit te bewaren, kiezen we dus ook hier voor PostgreSQL.</p>
             </div>
         </div>
     </div>
@@ -166,11 +187,14 @@
         <h3 class="text-center">Hosting</h3>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <p>Inleidende tekst.</p>
+                <p>De infrastructuur vormt het fundament van de communicatie en databeheer. Een goed doordachte keuze biedt dus niet alleen de nodige flexibiliteit en schaalbaarheid, 
+                    maar draagt ook bij aan de prestaties en veiligheid van de applicatie. Een verkeerde keuze kan daarentegen leiden tot hogere kosten, beveiligingsrisico’s en een inefficiënte werking. 
+                    In dit rapport vergelijken we de mogelijkheden van vier verschillende oplossingen: AWS, Azure, On-premise, en Combell Webhosting.</p>
                 <div class="text-center">
-                    <a href="PDF's/PDS Data.pdf" class="btn-pdf" target="_blank">Download PDS data</a>
+                    <a href="PDF's/Onderzoek Hosting.pdf" class="btn-pdf" target="_blank">Onderzoek hosting</a>
                 </div>
-                <p>Afsluitende tekst</p>
+                <p>Na het vergelijken van de opties blijkt AWS de beste keuze voor onze organisatie. AWS scoort hoog op kosten, schaalbaarheid, beveiliging en onderhoudbaarheid, wat het platform ideaal maakt voor Gladiolen. 
+                    De flexibiliteit en robuustheid van AWS geven ons de zekerheid dat we kunnen voldoen aan onze huidige en toekomstige behoeften.</p>
             </div>
         </div>
     </div>
@@ -179,11 +203,13 @@
         <h3 class="text-center">Authenticatie</h3>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <p>Inleidende tekst.</p>
+                <p>Omdat we met gevoelige gegevens werken is authenticatie een belangrijk onderdeel van onze applicatie. 
+                    Gebruiksvriendelijk is ook een belangrijk aspect van de applicatie, daarom moeten we de juiste balans zoeken tussen veiligheid en gebruiksvriendelijkheid.</p>
                 <div class="text-center">
-                    <a href="PDF's/PDS Data.pdf" class="btn-pdf" target="_blank">Download PDS data</a>
+                    <a href="PDF's/WRM authentication.pdf" class="btn-pdf" target="_blank">Onderzoek authentication</a>
                 </div>
-                <p>Afsluitende tekst</p>
+                <p>Wij zijn tot de volgende oplossing gekomen: Een combinatie van authenticatie met gebruikersnaam + wachtwoord en een OTP (One-Time-Password). 
+                    Deze oplossing biedt voldoende beveiliging zonder het gebruiksgemak zodanig te hinderen dat het aanmelden irritant wordt.</p>
             </div>
         </div>
     </div>
@@ -192,37 +218,41 @@
         <h3 class="text-center">Hardware</h3>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <p>Inleidende tekst.</p>
+                <p>In dit gedeelte van het onderzoek bekijken we het hardware gedeelte van onze opdracht. Dit onderdeel zal zich ook meer toespitsen op het aanmeldingsgedeelte. 
+                    Hier zullen ’s morgens vroeg zeer veel medewerkers/organisaties tegelijk moeten kunnen aanmelden. Daarom moet dit ook vlot en gebruiksvriendelijk verlopen.
+                In het eerste deel vind je het onderzoek hoe we de VPN kunnen implementeren. In het tweede deel bespreken we de toestellen om aan te melden.</p>
                 <div class="text-center">
-                    <a href="PDF's/PDS Data.pdf" class="btn-pdf" target="_blank">Download PDS data</a>
+                    <a href="PDF's/Onderzoek hardware.pdf" class="btn-pdf" target="_blank">Onderzoek hardware</a>
                 </div>
-                <p>Afsluitende tekst</p>
+                <p>Tailscale biedt de beste algehele oplossing, met de hoogste score van 95%. 
+                    Het combineert uitstekende beveiliging, prestaties, schaalbaarheid en eenvoud in configuratie en beheer.</p>
+                    <p>Na het evalueren van de mogelijke oplossingen voor het aanmelden van medewerkers tijdens Gladiolen, blijkt de laptop de meest geschikte keuze. 
+                        Dit is gebaseerd op een grondige beoordeling van de criteria: toegankelijkheid, betrouwbaarheid, gebruiksvriendelijkheid, capaciteit en technische eisen.</p>
             </div>
         </div>
     </div>
 
     <div class="container py-3">
-        <h3 class="text-center">Aanmeldingsruimte</h3>
+        <h3 class="text-center">Opstelling aanmeldingsruimte</h3>
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <p>Inleidende tekst.</p>
+                <p>In dit onderzoek bespreken we de opstelling van de aanmeldingsruimte en bekijken we visueel hoe de verbinding tot stand komt voor de verdere locaties: camping en parking.</p>
                 <div class="text-center">
-                    <a href="PDF's/PDS Data.pdf" class="btn-pdf" target="_blank">Download PDS data</a>
+                    <a href="PDF's/Onderzoek hardware.pdf" class="btn-pdf" target="_blank">Onderzoek hardware</a>
+                    <img src="Afbeeldingen/hardwareplan.png" class="img-fluid" alt="vpn">
                 </div>
-                <p>Afsluitende tekst</p>
+                <p>Met deze info kan Gladiolen verder. De info kan aan het technische team overgebracht worden, waardoor we een solide plan hebben om de aanmelding succesvol te laten verlopen.</p>
             </div>
         </div>
     </div>
 
-    <div class="container py-3">
-        <h3 class="text-center">Eindconclusie</h3>
-        <div class="row justify-content-center">
+    <div class="container py-5">
+        <div class="row justify-content-center mt-4">
             <div class="col-lg-10">
-                <p> tekst.</p>
-
+                <img src="Afbeeldingen/camping.png" class="img-fluid" alt="camping">
             </div>
-        </div>
-    </div>
+        </div></div>
+
 
     <div class="container py-5">
         <h3 class="text-center">Eindconclusie dataproject</h3>
@@ -233,6 +263,13 @@
             </div>
         </div>
     </div>
+    <div class="container py-5">
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-10">
+                <img src="Afbeeldingen/pommelien.png" class="img-fluid" alt="pommelien">
+            </div>
+        </div></div>
+
 
     <!-- Footer -->
     <footer class="text-white text-center py-3">

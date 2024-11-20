@@ -108,7 +108,11 @@
     <header class="header-background text-white text-center py-5">
         <div class="container">
             <h1 class="display-4">Bekerproject</h1>
-            <p class="lead">Hier vind je de gedetailleerde documenten voor het project.</p>
+            <p class="lead">Het doel van dit project is het ontwikkelen van een geavanceerd monitoringsysteem voor
+                vuilbakken die worden gevuld met herbruikbare bekers. Studenten van de opleiding
+                Internet of Things (IoT) voorzien de sensoren waarmee we de vullingsgraad en
+                batterijstatus van deze vuilbakken in real-time kunnen registreren. Deze gegevens zullen
+                worden geanalyseerd en geïmplementeerd in een gebruiksvriendelijk dashboard.</p>
         </div>
     </header>
 
@@ -169,6 +173,21 @@
                     Verder keken we niet meer naar prestaties en schaalbaarheid, omdat het project zo beperkt is, dat we ervan uitgingen dat beide criteria amper voor verschil zouden zorgen wat betreft eindervaring. 
                     Integratie met backend voegden we er wel aan toe, maar dat bleek achteraf ook een maat voor niets, aangezien alle onderzochte frameworks perfect te bouwen zijn op een Spring backend.</p>
                 <p>React kwam als overwinnaar uit de bus. Een krachtig en flexibel framework dat ons in staat zal stellen om de nodige software te kunnen bouwen voor onze klant.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-3">
+        <h3 class="text-center">Database</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <p>We willen in kaart brengen hoe we de data van beide projecten zullen verwerken. De dataregistratie enerzijds en het bekerproject anderzijds. 
+                    Aangezien beide projecten toch iets andere noden hebben qua database, maken we hier een duidelijke splitsing.</p>
+                <div class="text-center">
+                    <a href="PDF's/PDS Data.pdf" class="btn-pdf" target="_blank">Download PDS data</a>
+                </div>
+                <p>Op het eerste zicht lijkt de keuze tussen MySQL en PostgreSQL dus weinig verschil met zich mee te brengen. Beide databases hebben hun eigen sterktes, maar geen enkele van de twee lijkt daar duidelijk veel beter geschikt te zijn voor de kleine database die wij zullen hebben.
+                    Wat betreft de bekerrecyclage is er echter wel een duidelijke keuze en die maakt gebruik van PostgreSQL. Om zoveel mogelijk de uniformiteit te bewaren, kiezen we dus ook hier voor PostgreSQL.</p>
             </div>
         </div>
     </div>
